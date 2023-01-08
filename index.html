@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. 갑자</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+       Kakao.init("cb0bc9138bf95e950b93a724e4834fe3");
+       function sendLink() {
+       Kakao.Link.sendDefault({
+            templateId: 88280
+        });
+    }
+</script>
+<!— www.blackcats4567.com —>
+<!— 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 —>
+  </body>
+</html>
